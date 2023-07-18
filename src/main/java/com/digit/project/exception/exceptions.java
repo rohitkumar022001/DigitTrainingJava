@@ -22,11 +22,12 @@ public class exceptions {
 		} catch (ArithmeticException e1) {
 			System.out.println("ArithmeticException");
 
-		} catch (NegativeArraySizeException e2) {
+		}/* catch (NegativeArraySizeException e2) {
 			System.out.println("NegativeArraySizeException");
 
-		} catch (ArrayIndexOutOfBoundsException e1) {
-			System.out.println("ArrayIndexOutOfBoundsException");
+		}*/ catch (ArrayIndexOutOfBoundsException|NegativeArraySizeException e1) {
+			//System.out.println("ArrayIndexOutOfBoundsException");
+			System.out.println("Array related Exception");
 
 		} catch (InputMismatchException e1) {
 			System.out.println("InputMismatchException");
