@@ -19,7 +19,12 @@ public class thread {
 			Thread.sleep(3000);
 		}
 		System.out.println("printing completed");
-		
-	}
+		System.out.println("adding operation");
+		int a,b;
+		a=sc.nextInt();
+		b=sc.nextInt();
+		int res=a+b;
+		System.out.println("result = "+res);
+		}
 
 }
