@@ -2,7 +2,7 @@ package com.digit.java.thread;
 
 import java.util.Scanner;
 
-class Banking implements Runnable {
+class op1 implements Runnable {
 
 	Scanner sc = new Scanner(System.in);
 
@@ -30,7 +30,7 @@ class Banking implements Runnable {
 
 }
 
-class printing implements Runnable {
+class op2 implements Runnable {
 
 	public void run() {
 
@@ -61,7 +61,7 @@ class printing implements Runnable {
 
 }
 
-class add implements Runnable {
+class op3 implements Runnable {
 
 	Scanner sc = new Scanner(System.in);
 
@@ -93,11 +93,10 @@ public class runnableThread {
 
 	public static void main(String[] args) {
 
-		Banking op1 = new Banking();
-
-		printing op2 = new printing();
-
-		add op3 = new add();
+		op1 op1 = new op1();
+		op2 op2 = new op2();
+		op3 op3 = new op3();
+		
 
 		Thread t1 = new Thread(op1);
 		t1.setName("banking");
