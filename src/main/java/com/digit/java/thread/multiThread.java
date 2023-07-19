@@ -110,6 +110,7 @@ public class multiThread {
 		op2.start();
 
 		op3.start();
+		System.out.println("main terminated");
 
 	}
 
