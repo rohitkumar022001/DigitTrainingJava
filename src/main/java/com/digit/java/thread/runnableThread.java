@@ -95,20 +95,15 @@ public class runnableThread {
 
 		Banking op1 = new Banking();
 
-		//op1.setName("banking");
-
 		printing op2 = new printing();
-
-		//op2.setName("printing");
 
 		add op3 = new add();
 
-		//op3.setName("add");
-		Thread t1=new Thread(op1);
+		Thread t1 = new Thread(op1);
 		t1.setName("banking");
-		Thread t2=new Thread(op2);
+		Thread t2 = new Thread(op2);
 		t2.setName("printing");
-		Thread t3=new Thread(op3);
+		Thread t3 = new Thread(op3);
 		t3.setName("add");
 
 		t1.start();
