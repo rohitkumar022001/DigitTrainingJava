@@ -6,6 +6,8 @@ package com.digit.java.collectionFramework;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
+import java.util.TreeSet;
 
 /**
  * 
@@ -48,7 +50,17 @@ public class linkedlist1 {
 		ArrayDeque d=new ArrayDeque();
 		d.add(232);
 		d.add(23);
-		
+		PriorityQueue q=new PriorityQueue();
+		q.add(200);
+		q.add(100);
+		q.add(50);
+		System.out.println(q);
+		TreeSet t=new TreeSet();
+		t.add(100);
+		t.add(300);
+		t.add(20);
+		t.add(1);
+		System.out.println(t);
 		
 	}
 
