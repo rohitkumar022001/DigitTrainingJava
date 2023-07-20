@@ -1,105 +1,86 @@
 package com.digit.java.thread;
+
 //consumer producer problem
-class p1 extends Thread{
+class p1 extends Thread {
 
-    Queue a;
+	Queue a;
 
-    public p1(Queue q) {
+	public p1(Queue q) {
 
-        a = q;
+		a = q;
 
-    }
+	}
 
-    
+	public void run() {
 
-    public void run() {
+		int i = 0;
 
-        int i=0;
+		while (true) {
 
-        while(true) {
+			a.put(i++);
 
-            a.put(i++);
+		}
 
-        }
-
-    }
+	}
 
 }
 
- 
+class Consumer extends Thread {
 
-class Consumer extends Thread{
+	Queue b;
 
-    Queue b;
+	public Consumer(Queue q) {
 
-    
+		b = q;
 
-    public Consumer(Queue q) {
+	}
 
-        b = q;
+	public void run() {
 
-    }
+		while (true) {
 
-    
+			b.get();
 
-    public void run() {
+		}
 
-        while(true) {
-
-            b.get();
-
-        }
-
-    }
+	}
 
 }
-
- 
 
 class Queue {
 
-    int x = 0;
+	int x = 0;
 
-    
+	public void get() {
 
-    public void get() {
+		System.out.println("Consumer Consumed The Value : " + x);
 
-        System.out.println("Consumer Consumed The Value : "+x);
+	}
 
-    }
+	public void put(int i) {
 
-    
+		x = i;
 
-    public void put(int i) {
+		System.out.println("Producer has Produced the value " + x);
 
-        x = i;
-
-        System.out.println("Producer has Produced the value "+x);
-
-    }
+	}
 
 }
 
 public class producer {
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
 
-    Queue  q = new Queue();
+		Queue q = new Queue();
 
-    
+		p1 p = new p1(q);
 
-    p1 p = new p1(q);
+		Consumer c = new Consumer(q);
 
-    Consumer c = new Consumer(q);
+		p.start();
 
-    
+		c.start();
 
-    
-
-    p.start();
-
-    c.start();
-
-}
+	}
 
 }
