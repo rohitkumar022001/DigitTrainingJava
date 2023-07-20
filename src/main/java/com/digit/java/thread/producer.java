@@ -16,7 +16,6 @@ class p1 extends Thread {
 		int i = 0;
 
 		while (true) {
-
 			a.put(i++);
 
 		}
@@ -49,15 +48,15 @@ class Consumer extends Thread {
 
 class Queue {
 
-	int x = 0;
-
-	public void get() {
+	int x =0;
+	boolean value_x=false;
+	synchronized void get() {
 
 		System.out.println("Consumer Consumed The Value : " + x);
 
 	}
 
-	public void put(int i) {
+	synchronized void put(int i) {
 
 		x = i;
 
