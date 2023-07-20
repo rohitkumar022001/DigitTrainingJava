@@ -32,7 +32,7 @@ public class ArrayList1 {
 		System.out.println(l.isEmpty());
 		System.out.println(l.remove(2));
 		System.out.println(l.size());
-		System.out.println(l.toString());
+		//System.out.println(l.toString());
 		System.out.println(l.hashCode());
 		System.out.println(l1.hashCode());
 		//System.out.println(l.addAll(1, l1));
@@ -44,7 +44,7 @@ public class ArrayList1 {
 		System.out.println(l);
 		System.out.println(l.containsAll(l1));
 		System.out.println(l.hashCode()==l1.hashCode() );
-		System.out.println(l.re);
+		
 		
 
 	}
