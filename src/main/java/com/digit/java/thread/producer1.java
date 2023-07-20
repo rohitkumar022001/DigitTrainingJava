@@ -57,9 +57,9 @@ class Queue1 {
 
 		try {
 
-			if (!value_of_x) {
+			if (value_of_x) {
 
-				value_of_x = true;
+				value_of_x = false;
 
 				System.out.println("Consumer Consumed The Value : " + x);
 
@@ -85,11 +85,11 @@ class Queue1 {
 
 		try {
 
-			if (value_of_x) {
+			if (!value_of_x) {
 
 				x = i;
 
-				value_of_x = false;
+				value_of_x = true;
 
 				System.out.println("Producer has Produced the value " + x);
 
