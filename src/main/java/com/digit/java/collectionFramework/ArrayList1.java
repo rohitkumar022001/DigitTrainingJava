@@ -43,6 +43,8 @@ public class ArrayList1 {
 		//l.toArray();
 		System.out.println(l);
 		System.out.println(l.containsAll(l1));
+		System.out.println(l.hashCode()==l1.hashCode() );
+		System.out.println(l.re);
 		
 
 	}
