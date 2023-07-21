@@ -5,9 +5,13 @@ package com.digit.java.collectionFramework;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.TreeSet;
+
+import javax.print.attribute.HashAttributeSet;
 
 /**
  * 
@@ -61,7 +65,29 @@ public class linkedlist1 {
 		t.add(20);
 		t.add(1);
 		System.out.println(t);
+		System.out.println(t.descendingSet());
+		System.out.println(t);
+		HashSet h=new HashSet();
+		h.add(100);
+		h.add(200);
+		h.add(500);
+		h.add(25);
+		h.add(50);
+		h.add(75);
+		h.add(125);
+		h.add(1);
+		System.out.println(h);
+		LinkedHashSet lh=new LinkedHashSet();
+		lh.add(100);
+		lh.add(200);
+		lh.add(500);
+		lh.add(25);
+	    lh.add(50);
+		lh.add(75);
+		lh.add(125);
+		lh.add(1);
 		
+		System.out.println(lh);
 	}
 
 }
