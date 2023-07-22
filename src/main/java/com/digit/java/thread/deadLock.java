@@ -15,7 +15,6 @@ class Warrior extends Thread {
 	String res1 = "Bhramastra";
 	String res2 = "Sarpastra";
 	String res3 = "Pashupatastra";
-
 	public void run() {
 		if (Thread.currentThread().getName().equals("Arjuna")) {
 			arjunaAcq();
