@@ -25,7 +25,7 @@ public class hashMap {
 		hm.put("reeshu", 3);
 		hm.put("rohit", 5);
 		hm.put("raja", 6);
-		hm.
+		
 		System.out.println(hm);
 		
 		
