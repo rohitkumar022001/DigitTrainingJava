@@ -1,6 +1,7 @@
-package com.digit.java.collectionFramework;
+package com.digit.java.fileoperation;
 
 import java.io.File;
+
 import java.io.IOException;
 
 
@@ -22,6 +23,7 @@ public class fileoperation {
 		System.out.println(f.getClass());
 		System.out.println(f.isFile());
 		System.out.println(f.isDirectory());
+		//f.delete();
 		
 
 	}

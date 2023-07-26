@@ -1,4 +1,4 @@
-package com.digit.java.collectionFramework;
+package com.digit.java.fileoperation;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
